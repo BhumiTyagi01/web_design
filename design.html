@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Portfolio</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #e6dede;
+            background-color: #0ea4b5;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header Styles */
+        header {
+            background: url('header-background.jpg') center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: rgb(241, 239, 239);
+        }
+
+        header h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        header a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background 0.3s ease;
+        }
+
+        header a:hover {
+            background-color: #e3e0e0;
+        }
+
+        /* Navigation Styles */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgb(213, 198, 200);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 50px 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgb(244, 241, 243);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #d8cbcb;
+            color: white;
+            margin-top: 20px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #dfd3d2;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">My Art</div>
+        <ul>
+            <li><a href="design.html">home</a></li>
+            <li><a href="h1.html">login</a></li>
+            <li><a href="h2.html">profile</a></li>
+            <li><a href="h3.html">Contact</a></li>
+            <li><a href="h4.html">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Welcome to My Art Portfolio</h1>
+        <p>Explore my journey through colors and creativity</p>
+        <a href="#gallery">View Gallery</a>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm BHUMI TYAGI, a passionate artist who loves creating unique pieces of art that inspire and connect with people. Each artwork tells a story and captures moments that resonate with the soul.</p>
+        <p>Art is a universal language that transcends boundaries, expressing emotions, ideas, and stories in ways words cannot. It reflects the culture, history, and spirit of humanity, allowing us to connect with others and ourselves. From vibrant paintings to mesmerizing music, intricate sculptures to powerful performances, art inspires creativity, provokes thought, and brings beauty to our lives. It is both a mirror of society and a window into the soul.
+
+
+
+
+
+
+        </p>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="6286110.jpg" alt="Art Piece 1">
+            <img src="needle-felted-environment.jpg" alt="Art Piece 2">
+            <img src="6232927.jpg" alt="Art Piece 3">
+            <img src="25 easy painting ideas for beginners on canvas for super fun DIY home decoration!.jpg" alt="Art Piece 4">
+            <img src="Hand-painted White Cloud Valley Flowers Acrylic Painting, Landscape Artwork for Home Decor.jpg" alt="Art Piece 5">
+            <img src="Art Kawaii.jpg" alt="Art Piece 6">
+            <img src="how to paint flowers on canvas for beginners how to start oil painting on canvas for beginners canva.jpg" alt="Art Piece 7">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you’d like to collaborate or inquire about my artwork, feel free to reach out!</p>
+        <p>Email: <a href="mailto:bhumityagi@089@gmail.com">bhumityagi089@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Art Portfolio | Designed with <span style="color: #da2717;">&hearts;</span></p>
+    </footer>
+</body>
+</html>
